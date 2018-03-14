@@ -2,7 +2,7 @@ React = require("react")
 from components.component import Component
 
 class MyComponent(Component):
-    def __init__(self, *args) -> MyComponent:
+    def __init__(self, *args) -> None:
         super().__init__(*args)
         self.state = { "count": 0 }
 

@@ -4,7 +4,7 @@ from typing import Union, Dict, Any, Callable
 class Component:
     isReactComponent: Dict[str, Any] = {}
 
-    def __init__(self, props: Dict[str, Any], context, updater) -> Component:
+    def __init__(self, props: Dict[str, Any], context, updater) -> None:
         self.component = __new__(React.Component(props, context, updater))
 
     def setState(self,
