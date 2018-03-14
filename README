@@ -1,0 +1,2 @@
+This is a simple "Hello World" proof of concept for using the ReactJS library
+to create UI components that are written in Python and compiled to Javascript using Transcrypt.
