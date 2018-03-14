@@ -4,7 +4,7 @@ from components.component import Component
 class MyComponent(Component):
     def __init__(self, *args) -> MyComponent:
         super().__init__(*args)
-        self.component.state = { "count": 0 }
+        self.state = { "count": 0 }
 
     def render(self):
         return __pragma__("xtrans",

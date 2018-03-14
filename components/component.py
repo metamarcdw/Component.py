@@ -18,3 +18,7 @@ class Component:
     @property
     def state(self) -> Dict[str, Any]:
         return self.component.state
+
+    @state.setter
+    def state(self, initial_state: Dict[str, Any]) -> None:
+        self.component.state = initial_state
