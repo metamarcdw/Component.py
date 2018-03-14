@@ -2,7 +2,7 @@ React = require("react")
 from components.component import Component
 
 class MyComponent(Component):
-    def __init__(self, *args):
+    def __init__(self, *args) -> MyComponent:
         super().__init__(*args)
         self.component.state = { "count": 0 }
 
@@ -15,5 +15,5 @@ class MyComponent(Component):
             </div>
                           """.strip())
 
-    def componentWillMount(self):
+    def componentWillMount(self) -> None:
         console.log("Hello World")
