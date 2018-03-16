@@ -1,7 +1,7 @@
 React = require("react")
 ReactDOM = require("react-dom")
 
-from App import App
+from app import App
 
 root_component = __pragma__("xtrans",
                             "npx babel --presets=react",
