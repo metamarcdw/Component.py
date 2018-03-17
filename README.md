@@ -10,8 +10,7 @@ npm install
 mkvirtualenv react-transcrypt
 pip install transcrypt
 
-make compile  
-make bundle  
+make go  
 ```
 
 Open index.html with Chrome or Firefox
