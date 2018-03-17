@@ -1,8 +1,8 @@
 {
-  "name": "transcrypt-test",
+  "name": "react-transcrypt",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/__javascript__/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +13,8 @@
     "babel-cli": "^6.26.0",
     "babel-preset-react": "^6.24.1",
     "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.12"
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
   },
   "dependencies": {
     "react": "^16.2.0",

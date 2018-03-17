@@ -1,13 +1,13 @@
 clean:
-	rm -rf __javascript__/ components/__javascript__/
+	rm -rf src/__javascript__/ src/components/__javascript__/
 
 cleanjs:
 	rm -rf node_modules/ package-lock.json
 
 compile:
-	transcrypt -nab -ds --parent=.none index.py
+	transcrypt -nab -ds --parent=.none src/index.py
 
-bundle:
-	npx webpack __javascript__/index.js --output __javascript__/bundle.js
+server:
+	npx webpack-dev-server
 
-.PHONY: clean cleanjs compile bundle
+.PHONY: clean cleanjs compile server
