@@ -6,11 +6,7 @@ class Component:
 
     def __init__(self, props: Dict[str, Any], context, updater) -> None:
         self.component = __new__(React.Component(props, context, updater))
-
-    def setState(self,
-                 partialState: Union[Dict[str, Any], Callable],
-                 callback: Callable) -> None:
-        return self.component.setState(partialState, callback)
+        self.setState = self.component.setState.bind(self)
 
     def forceUpdate(self, callback: Callable) -> None:
         return self.component.forceUpdate(callback)
@@ -26,3 +22,4 @@ class Component:
 class PureComponent(Component):
     def __init__(self, props: Dict[str, Any], context, updater) -> None:
         self.component = __new__(React.PureComponent(props, context, updater))
+        self.setState = self.component.setState.bind(self)

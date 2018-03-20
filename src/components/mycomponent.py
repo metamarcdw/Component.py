@@ -15,5 +15,6 @@ class MyComponent(Component):
             </div>
                           """.strip())
 
-    def componentWillMount(self) -> None:
+    def componentDidMount(self) -> None:
+        self.setState({ "count": 1 })
         console.log("Hello World")
