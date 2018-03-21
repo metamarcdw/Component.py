@@ -1,5 +1,5 @@
 React = require("react")
-from typing import Union, Dict, Any, Callable
+from typing import Dict, Any, Callable
 
 class Component:
     isReactComponent: Dict[str, Any] = {}
