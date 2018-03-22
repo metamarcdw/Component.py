@@ -1,6 +1,6 @@
 React = require("react")
 
-from components.component import Component
+from Component_py.component import Component
 from components.mycomponent import MyComponent
 from components.mycomponent2 import MyComponent2
 

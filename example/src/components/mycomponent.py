@@ -1,5 +1,5 @@
 React = require("react")
-from components.component import Component
+from Component_py.component import Component
 
 class MyComponent(Component):
     def __init__(self, *args) -> None:
