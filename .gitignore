@@ -1,4 +1,5 @@
 .mypy_cache
+__pycache__
 __javascript__
 node_modules
 package-lock.json

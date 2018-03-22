@@ -1,3 +1,4 @@
+require = lambda s: None  # __:skip
 React = require("react")
 from typing import Dict, Any, Callable
 
