@@ -1,11 +1,11 @@
-React = require("react")
-
+from Component_py.component import require  # __:skip
 from Component_py.component import Component
 from components.mycomponent import MyComponent
 from components.mycomponent2 import MyComponent2
+React = require("react")
 
 class App(Component):
-    def render():
+    def render(self):
         return __pragma__("xtrans",
                           "npx babel --presets=react",
                           "{}", """

@@ -1,7 +1,8 @@
+from Component_py.component import __pragma__, require, document  # __:skip
+from app import App
+
 React = require("react")
 ReactDOM = require("react-dom")
-
-from app import App
 
 root_component = __pragma__("xtrans",
                             "npx babel --presets=react",
