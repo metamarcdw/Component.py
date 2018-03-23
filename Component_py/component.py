@@ -1,9 +1,6 @@
-__pragma__: Callable[[str], None] = lambda *s: None  # __:skip
-require: Callable[[str], Any] = lambda *s: None      # __:skip
-document = 0                                         # __:skip
-React = require("react")
-
 from typing import Dict, Any, Callable
+from Component_py.stubs import require  # __:skip
+React = require("react")
 
 class Component:
     isReactComponent: Dict[str, Any] = {}

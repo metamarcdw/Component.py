@@ -1,3 +1,4 @@
+from Component_py.stubs import require  # __:skip
 React = require("react")
 
 def MyComponent2():

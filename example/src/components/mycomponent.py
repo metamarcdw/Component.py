@@ -1,5 +1,6 @@
-React = require("react")
 from Component_py.component import Component
+from Component_py.stubs import require  # __:skip
+React = require("react")
 
 class MyComponent(Component):
     def __init__(self, *args) -> None:
