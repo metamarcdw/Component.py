@@ -1,4 +1,4 @@
-from Component_py.component import __pragma__, require, document  # __:skip
+from Component_py.stubs import __pragma__, require, document  # __:skip
 from app import App
 
 React = require("react")
