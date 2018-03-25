@@ -5,4 +5,7 @@ require: Callable[[str], Any] = lambda *s: None
 class Document:
     def getElementById(self, str_): pass
 document = Document()
+class Object:
+    def assign(o1, o2): pass
+    def keys(o): pass
 __pragma__("noskip")

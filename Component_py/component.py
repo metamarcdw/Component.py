@@ -8,6 +8,7 @@ class Component:
     def __init__(self, props: Dict[str, Any], context, updater) -> None:
         self.component = __new__(React.Component(props, context, updater))
         self.setState = self.component.setState.bind(self)
+        self.props = props
 
     def forceUpdate(self, callback: Callable) -> None:
         return self.component.forceUpdate(callback)
