@@ -18,9 +18,10 @@ npm install
 ```
 We can now compile with Transcrypt and run our Webpack server  
 ```
-./compile
+make compile
 npm start
 # OR (If running Windows)
+compile
 npm run win
 ```
 Open up a browser and connect to http://localhost:3000
