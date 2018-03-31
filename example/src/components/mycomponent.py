@@ -8,9 +8,7 @@ class MyComponent(Component):
         self.state: Dict[str, int] = { "count": 0 }
 
     def render(self):
-        return __pragma__("xtrans",
-                          "npx babel --presets=react",
-                          "{}", """
+        return __pragma__("xtrans", None, "{}", """
             <div className="style">
                 Hello World {self.state["count"]}
             </div>

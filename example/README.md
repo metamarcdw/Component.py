@@ -10,7 +10,7 @@ Now set up your React/Transcrypt environment:
 (Use of a virtual environment is recommended but not required)  
 ```
 mkvirtualenv transcrypt
-pip install --upgrade transcrypt
+pip install git+https://github.com/qquick/transcrypt@master#egg=transcrypt
 pip install -e .
 
 cd example/
@@ -18,7 +18,9 @@ npm install
 ```
 We can now compile with Transcrypt and run our Webpack server  
 ```
-make compile  
-make go  
+./compile
+npm start
+# OR (If running Windows)
+npm run win
 ```
 Open up a browser and connect to http://localhost:3000

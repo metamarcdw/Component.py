@@ -4,6 +4,8 @@
   "description": "",
   "main": "src/__javascript__/bundle.js",
   "scripts": {
+    "start": "npx concurrently --kill-others \"npx nodemon -e py --watch src --exec 'make compile'\" \"npx webpack-dev-server\"",
+    "win": "npx concurrently --kill-others \"npx nodemon -e py --watch src --exec \"compile\"\" \"npx webpack-dev-server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
