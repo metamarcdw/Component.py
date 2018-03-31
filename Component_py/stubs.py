@@ -8,4 +8,5 @@ document = Document()
 class Object:
     def assign(o1, o2): pass
     def keys(o): pass
+window = console = modules = None
 __pragma__("noskip")
