@@ -15,12 +15,15 @@ pip install -e .
 
 cd example/
 npm install
+npm install -g babel-cli  # If running Windows
 ```
 We can now compile with Transcrypt and run our Webpack server  
 ```
 make compile
 npm start
-# OR (If running Windows)
+```
+OR (If running Windows)
+```
 compile
 npm run win
 ```
