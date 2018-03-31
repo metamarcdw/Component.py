@@ -7,9 +7,9 @@ React = require("react")
 
 class App(Component):
     def render(self):
-        return __pragma__("xtrans", None, "{}", """
+        return __pragma__("xtrans", None, "{}", """ (
             <div>
                 <MyComponent />
                 <MyComponent2 />
             </div>
-                          """.strip())
+        ); """)

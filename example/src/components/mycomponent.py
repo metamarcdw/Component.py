@@ -8,11 +8,11 @@ class MyComponent(Component):
         self.state: Dict[str, int] = { "count": 0 }
 
     def render(self):
-        return __pragma__("xtrans", None, "{}", """
+        return __pragma__("xtrans", None, "{}", """ (
             <div className="style">
                 Hello World {self.state["count"]}
             </div>
-                          """.strip())
+        ); """)
 
     def componentDidMount(self) -> None:
         self.setState({ "count": 1 })
