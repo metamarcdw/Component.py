@@ -25,3 +25,6 @@ class PureComponent(Component):
     def __init__(self, props: Dict[str, Any], context, updater) -> None:
         self.component = __new__(React.PureComponent(props, context, updater))
         self.setState = self.component.setState.bind(self)
+
+def destruct(dict_, *names):
+    return [dict_[name] for name in names]
