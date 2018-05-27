@@ -1,0 +1,38 @@
+commit dae716d749bc9143689b5899757da59b57e05a3a
+Author: Marc Wood <marcdw87@gmail.com>
+Date:   Sun May 27 15:41:50 2018 -0500
+
+    Update stubs.
+
+diff --git a/Component_py/stubs.py b/Component_py/stubs.py
+index 9f4d0bd..178f457 100644
+--- a/Component_py/stubs.py
++++ b/Component_py/stubs.py
+@@ -1,12 +1,21 @@
+-from typing import Any, Callable
+-__pragma__: Callable[[str], None] = lambda *s: None  # __:skip
+ __pragma__("skip")
+-require: Callable[[str], Any] = lambda *s: None
++def __pragma__(*s):
++    return None
++def require(*s):
++    return None
++
+ class Document:
+-    def getElementById(self, str_): pass
++    def getElementById(self, str_):
++        pass
+ document = Document()
++
+ class Object:
+-    def assign(o1, o2): pass
+-    def keys(o): pass
++    @staticmethod
++    def assign(*o):
++        pass
++    @staticmethod
++    def keys(o):
++        pass
++
+ window = console = module = None
+ __pragma__("noskip")

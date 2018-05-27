@@ -1,12 +1,21 @@
-from typing import Any, Callable
-__pragma__: Callable[[str], None] = lambda *s: None  # __:skip
 __pragma__("skip")
-require: Callable[[str], Any] = lambda *s: None
+def __pragma__(*s):
+    return None
+def require(*s):
+    return None
+
 class Document:
-    def getElementById(self, str_): pass
+    def getElementById(self, str_):
+        pass
 document = Document()
+
 class Object:
-    def assign(o1, o2): pass
-    def keys(o): pass
+    @staticmethod
+    def assign(*o):
+        pass
+    @staticmethod
+    def keys(o):
+        pass
+
 window = console = module = None
 __pragma__("noskip")
