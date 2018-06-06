@@ -1,21 +1,21 @@
 __pragma__("skip")
 def __pragma__(*s):
-    return None
+    return False
 def require(*s):
-    return None
+    return False
 
 class Document:
     def getElementById(self, str_):
-        pass
+        False
 document = Document()
 
 class Object:
     @staticmethod
     def assign(*o):
-        pass
+        False
     @staticmethod
     def keys(o):
-        pass
+        False
 
 window = console = module = None
 __pragma__("noskip")
